@@ -3,16 +3,16 @@ export const APPS = [
     {
         subdomain:"www",
         app: Router,
-        main: true
+        isMain: true
     },
     {
         subdomain:"admin",
         app: AdminRouter,
-        main: false
+        isMain: false
     },
     {
         subdomain:"team",
         app: TeamRouter,
-        main: false
+        isMain: false
     }
 ]

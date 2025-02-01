@@ -3,7 +3,7 @@ import { APPS } from "./constant";
 export const getApp = () => {
    const subdomain = getSubdomain(window.location.hostname);
 
-   const main = APPS.find((app) => app.main);
+   const main = APPS.find((app) => app.isMain);
 
    if (!main) throw new Error("Must have a main app");
 
